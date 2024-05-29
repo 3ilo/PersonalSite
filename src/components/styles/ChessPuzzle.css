@@ -1,0 +1,28 @@
+.chessPuzzleIframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.chessPuzzle {
+    width: 400px;
+    height: 450px;
+    display: inline-block;
+    padding: 1%;
+}
+
+.puzzleTitle {
+    display: block;
+    text-align: center;
+    margin-block-start: 0.5em;
+}
+
+.puzzleDescription {
+    max-width: 100%;
+    text-align: center;
+}
+
+.whiteToMove, .blackToMove {
+    max-width: 100%;
+    text-align: center;
+}

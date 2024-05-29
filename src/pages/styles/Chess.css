@@ -1,0 +1,16 @@
+.chessPuzzle {
+    width: 30%;
+    height: 50%;
+}
+
+.chess {
+    width: 100%;
+    height: 56%;
+    padding:1%;
+}
+
+.header {
+    font-size: 3em;
+    text-align: center;
+    max-width: 100%;
+}
