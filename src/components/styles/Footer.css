@@ -2,8 +2,13 @@
     display: flex;
     justify-content: center; /* Center items horizontally */
     align-items: center; /* Center items vertically */
-    max-width: 75%; /* Limit the width to 75% of the page */
+    max-width: 100%; /* Limit the width to 75% of the page */
     margin: 0 auto; /* Center horizontally */
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #DFC8CB;
+    border: solid;
 }
 
 .footer p, .footer a {

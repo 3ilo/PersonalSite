@@ -1,4 +1,3 @@
-import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Landing from "./pages/Landing";
 import Home from "./pages/Home";
