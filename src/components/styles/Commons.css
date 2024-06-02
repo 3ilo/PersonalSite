@@ -32,18 +32,11 @@
 }
 
 a:hover {
-    color: grey;
-    text-decoration: underline;
+    color: #8883DA;
 }
 
 a {
-    color: #3C3C3C;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-link {
-    color: #3C3C3C;
+    color: #3B32E5;
     text-decoration: none;
     font-weight: bold;
 }

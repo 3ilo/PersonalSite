@@ -1,9 +1,4 @@
 .noPage {
-    display: flex;
-    justify-content: center;
-}
-
-.no {
     width: 35%;
     display: flex;
     justify-content: center;
@@ -13,5 +8,5 @@
 
 .noPagePic {
     height: auto;
-    width: 50%;
+    width: 75%;
 }

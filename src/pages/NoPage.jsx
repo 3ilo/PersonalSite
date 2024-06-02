@@ -10,11 +10,9 @@ export default function NoPage() {
                     "How'd we even get here?"];
     return (
         <div className="noPage">
-            <div className="no">
-                <SectionHeader text={errorMsgs[randomSeed % 3]} alignment="Center"/>
-                <img className="noPagePic" src="../../public/logo.png"></img>
-                <TextField text={<Link to="/">Back to safety</Link>} alignment="Center"/>
-            </div>
-      </div>
+            <SectionHeader text={errorMsgs[randomSeed % 3]} alignment="Center"/>
+            <img className="noPagePic" src="../../public/logo.png"></img>
+            <TextField text={<Link to="/">Back to safety</Link>} alignment="Center"/>
+        </div>
     );
 }

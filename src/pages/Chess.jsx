@@ -1,11 +1,10 @@
 import './styles/Chess.css';
-import './styles/Page.css';
 import ChessPuzzle from '../components/ChessPuzzle';
 import { SectionHeader } from '../components/Commons';
 
 export default function Chess() {
     return (
-      <div className="page chess">
+      <div className="chess">
         <SectionHeader text="My Puzzles" alignment="Center" />
         <ChessPuzzle source="//www.chess.com/emboard?id=11858963" 
             title="night night" description="zzzzz ~1300" isWhiteMove={false}/>

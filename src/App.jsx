@@ -7,8 +7,9 @@ import Resume from "./pages/Resume";
 import Projects from "./pages/Projects";
 import Chess from "./pages/Chess"
 import NoPage from "./pages/NoPage";
-import NavBar from "./components/NavBar"
-import Footer from "./components/Footer"
+import GenericPageWrapper from "./pages/GenericPageWrapper";
+import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 
 import './App.css'
 
@@ -22,14 +23,14 @@ function App() {
         <hr />
 
         <Routes className="routes">
-          <Route path="/" element={<Landing />} />
-          <Route path="/about" element={<Home />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/resume" element={<Resume />} />
-          <Route path="/chess" element={<Chess />} />
-          <Route path='*' element={<NoPage />} />
+          <Route path="/" element={<GenericPageWrapper page={<Landing />} />} />
+          <Route path="/about" element={<GenericPageWrapper page={<Home />} />} />
+          <Route path="/blog" element={<GenericPageWrapper page={<Blog />} />} />
+          <Route path="/contact" element={<GenericPageWrapper page={<Contact />} />} />
+          <Route path="/projects" element={<GenericPageWrapper page={<Projects />} />} />
+          <Route path="/resume" element={<GenericPageWrapper page={<Resume />} />} />
+          <Route path="/chess" element={<GenericPageWrapper page={<Chess />} />} />
+          <Route path='*' element={<GenericPageWrapper page={<NoPage />} />} />
         </Routes>
 
         <hr />

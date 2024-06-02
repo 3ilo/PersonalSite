@@ -18,7 +18,6 @@ export default function About() {
     const tWork = "I currently work at Amazon as a fullstack engineer."
 
     return (
-      <div className="aboutPage">
         <div className="aboutSection">
           <SectionHeader text="About" alignment="Left" />
           <TextField text={tSummary} alignment="Left" />
@@ -26,6 +25,5 @@ export default function About() {
           <GenericWrapper component={cHobbies} alignment="Left" />
           <TextField text={tWork} alignment="Left" />
         </div>
-      </div>
     );
 }

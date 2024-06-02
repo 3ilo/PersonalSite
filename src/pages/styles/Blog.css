@@ -2,11 +2,6 @@
     width: 35%;
 }
 
-.blogPage {
-    display: flex;
-    justify-content: center;
-}
-
 .divider {
     border: 0.1px solid black;
 }
