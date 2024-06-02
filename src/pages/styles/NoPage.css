@@ -1,0 +1,17 @@
+.noPage {
+    display: flex;
+    justify-content: center;
+}
+
+.no {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.noPagePic {
+    height: auto;
+    width: 50%;
+}

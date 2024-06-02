@@ -1,0 +1,9 @@
+.contactSection {
+    width: 50%;
+    justify-self: center;
+}
+
+.contactPage {
+    display: flex;
+    justify-content: center;
+}

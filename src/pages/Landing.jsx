@@ -9,6 +9,7 @@ export default function Landing() {
     return (
       <div className="landingContent">
         <img src="../public/pfp.png" alt="profile picture" class="pfp"></img>
+        <br/>
         <GenericWrapper className={"description"} component={tOverview} 
             alignment="Center"/>
       </div>
