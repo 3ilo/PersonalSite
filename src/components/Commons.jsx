@@ -16,4 +16,12 @@ const TextField = (props) => {
     )
 }
 
-export { SectionHeader, TextField };
+const GenericWrapper = (props) => {
+    return (
+        <p className={`${ props.className } generic alignment${props.alignment}`}> 
+            {props.component}
+        </p>
+    )
+}
+
+export { SectionHeader, TextField, GenericWrapper };
