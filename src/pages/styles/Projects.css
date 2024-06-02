@@ -1,0 +1,16 @@
+.projects {
+    width: 50%;
+}
+
+.projectsPage {
+    display: flex;
+    justify-content: center;
+}
+
+.projectsSubheader {
+    font-style: italic;
+}
+
+.sectionDivider {
+    border: 1px solid black;
+}

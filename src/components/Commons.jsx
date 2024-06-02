@@ -8,6 +8,14 @@ const SectionHeader = (props) => {
     );
 }
 
+const SubHeader = (props) => {
+    return (
+        <h3 className={`${ props.className } subheader alignment${props.alignment}`}>
+            {props.text}
+        </h3>
+    );
+}
+
 const TextField = (props) => {
     return (
         <p className={`${ props.className } text alignment${props.alignment}`}> 
@@ -24,4 +32,4 @@ const GenericWrapper = (props) => {
     )
 }
 
-export { SectionHeader, TextField, GenericWrapper };
+export { SectionHeader, SubHeader, TextField, GenericWrapper };

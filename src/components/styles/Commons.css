@@ -3,6 +3,11 @@
     font-family: Garamond, serif;
 }
 
+.subheader {
+    font-size: 2em;
+    font-family: Garamond, serif;
+}
+
 .text {
     font-size: 1em;
     font-family: Garamond, serif;
@@ -10,6 +15,8 @@
 
 .generic {
     font-family: Garamond, serif;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
 }
 
 .alignmentLeft {

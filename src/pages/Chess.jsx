@@ -11,10 +11,10 @@ export default function Chess() {
             title="night night" description="zzzzz ~1300" isWhiteMove={false}/>
         <ChessPuzzle source="//www.chess.com/emboard?id=11858949" 
             title="GEB" description="strange loops ~3100" isWhiteMove={false}/>
-        <ChessPuzzle source="//www.chess.com/emboard?id=11867535" 
-            title="call an ambulence!" description="but not for me ~1500" isWhiteMove={false}/>
         <ChessPuzzle source="//www.chess.com/emboard?id=11867545" 
-            title="hail mary" description="never give up ~1800" isWhiteMove={false}/>
+            title="call an ambulence!" description="but not for me ~1800" isWhiteMove={false}/>
+        <ChessPuzzle source="//www.chess.com/emboard?id=11867535" 
+            title="hail mary" description="never give up ~1500" isWhiteMove={false}/>
       </div>
     );
   }
