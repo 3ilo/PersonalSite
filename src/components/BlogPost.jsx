@@ -15,7 +15,7 @@ export default function BlogPost(props){
     const BlogBody = (props) => {
         return (
             <GenericWrapper className="blogBody" 
-            component={props.body} alignment="Center"/>
+            component={props.body} alignment="Left"/>
         )
     }
     return(
