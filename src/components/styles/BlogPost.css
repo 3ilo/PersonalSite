@@ -1,0 +1,16 @@
+.blogTitle {
+    text-align: center;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+.blogDate {
+    margin-block-start: 1em;
+    margin-block-end: 0em;
+    font-style: italic;
+}
+
+.blogBody {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}

@@ -9,6 +9,7 @@
     bottom: 0;
     background-color: #7C7C7C;
     border: solid;
+    border-width: 1px;
 }
 
 .footer p, .footer a {

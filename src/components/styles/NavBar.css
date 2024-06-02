@@ -5,6 +5,7 @@
     padding: 0.5% 0.5%; /* padding for the navbar */
     background-color: #7C7C7C;
     border: solid;
+    border-width: 1px;
 }
 
 .name {
