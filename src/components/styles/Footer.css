@@ -1,9 +1,9 @@
 .footer {
     display: flex;
-    justify-content: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
-    max-width: 100%; /* Limit the width to 75% of the page */
-    margin: 0 auto; /* Center horizontally */
+    justify-content: center;
+    align-items: center; 
+    max-width: 100%; 
+    margin: 0 auto;
     width: 100%;
     position: fixed;
     bottom: 0;
@@ -13,7 +13,7 @@
 }
 
 .footer p, .footer a {
-    margin-inline: 7%; /* Equal horizontal spacing between items */
+    margin-inline: 7%; 
     align-items: center;
     display: flex;
 }

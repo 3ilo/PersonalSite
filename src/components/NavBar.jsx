@@ -5,6 +5,7 @@ export default function NavBar() {
     return (
       <>
         <div className="topnav">
+          <div className="navComponents">
             <Link className="name" to="/">Milo Chase</Link>
             <span className="links">
               <Link to="/about">About</Link>
@@ -13,6 +14,7 @@ export default function NavBar() {
               <Link to="/resume">Resume</Link>
               <Link to="/contact">Contact</Link> 
             </span>
+          </div>
         </div>
       </>
     );
