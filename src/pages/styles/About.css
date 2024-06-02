@@ -1,0 +1,9 @@
+.aboutSection {
+    width: 50%;
+    justify-self: center;
+}
+
+.aboutPage {
+    display: flex;
+    justify-content: center;
+}

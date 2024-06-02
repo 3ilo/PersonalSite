@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Landing from "./pages/Landing";
-import Home from "./pages/Home";
+import Home from "./pages/About";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
@@ -23,7 +23,7 @@ function App() {
 
         <Routes className="routes">
           <Route path="/" element={<Landing />} />
-          <Route path="/home" element={<Home />} />
+          <Route path="/about" element={<Home />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/projects" element={<Projects />} />

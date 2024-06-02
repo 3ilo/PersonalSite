@@ -7,7 +7,7 @@ export default function NavBar() {
         <div className="topnav">
             <Link className="name" to="/">Milo Chase</Link>
             <span className="links">
-              <Link to="/home">Home</Link>
+              <Link to="/about">About</Link>
               <Link to="/blog">Blog</Link>
               <Link to="/projects">Projects</Link>
               <Link to="/resume">Resume</Link>

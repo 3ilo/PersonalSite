@@ -12,9 +12,9 @@
     height: 30%;
     width: 30%;
 }
-p {
+/* p {
     max-width: 40%;
-}
+} */
 
 .chessLink {
     color: black;
@@ -23,4 +23,7 @@ p {
 .chessLink:hover {
     color: grey;
     text-decoration: underline;
+}
+.description {
+    max-width: 40%;
 }
