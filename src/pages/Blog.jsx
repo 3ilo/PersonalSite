@@ -1,4 +1,4 @@
-import './styles/blog.css'
+import './styles/Blog.css'
 import { SectionHeader } from "../components/Commons";
 import BlogPost from "../components/BlogPost";
 import { useEffect, useState } from "react";
@@ -9,9 +9,9 @@ import { useEffect, useState } from "react";
  */
 export default function Blog() {
     const [posts, setPosts] = useState({});
-    const postPath = "../../public/BlogPosts/"
+    const postPath = "/BlogPosts/"
     const postFiles = {
-        "First post": "1 June 2024",
+        "7": "1 June 2024",
     }
     useEffect(() => {
         Object.entries(postFiles).forEach(([title, date]) => fetch(postPath+title+".txt").then(

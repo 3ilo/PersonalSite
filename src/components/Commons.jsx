@@ -1,4 +1,4 @@
-import './styles/commons.css'
+import './styles/Commons.css'
 
 const SectionHeader = (props) => {
     return (

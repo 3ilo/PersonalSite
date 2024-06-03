@@ -1,4 +1,4 @@
-import './styles/about.css'
+import './styles/About.css'
 import { SectionHeader, TextField, GenericWrapper } from '../components/Commons'
 import { Link } from "react-router-dom";
 

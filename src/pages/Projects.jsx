@@ -1,4 +1,4 @@
-import './styles/projects.css'
+import './styles/Projects.css'
 import { SectionHeader, SubHeader } from "../components/Commons";
 import Project from "../components/Project";
 
