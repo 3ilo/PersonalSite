@@ -5,8 +5,9 @@ export default function Project(props){
     const ProjectTitle = (props) => {
         return(
             <GenericWrapper component={<><h3 className="projectTitle">{props.title}</h3>
-            <a href={props.link}>&nbsp;[link]</a>
-            <a href={props.source}>&nbsp;[source]</a></>} />
+            {typeof props.link === "string" ? <a href={props.link}>&nbsp;[link]</a> : props.link}
+            {typeof props.source === "string" ? <a href={props.source}>&nbsp;[source]</a> : props.source} 
+            </>}/>
         )
     }
     const ProjectDescription = (props) => {

@@ -1,6 +1,7 @@
 import './styles/Projects.css'
 import { SectionHeader, SubHeader } from "../components/Commons";
 import Project from "../components/Project";
+import { Link } from "react-router-dom";
 
 export default function Projects() {
     const tMixGen = "[Work in Progress] MixGen is a web app leveraging the power of LLMs to automatically generate music playlists based on a natural language prompt. " +
@@ -25,7 +26,7 @@ export default function Projects() {
           <Project title="Quantifying the Uniqueness of Donald Trump in Presidential Discourse" description={tTrumpDivisiveness} link="https://arxiv.org/abs/2401.01405" source="https://github.com/ChicagoHAI/debate-divisiveness"/>
           <SubHeader className="projectsSubheader" text="Puzzles" alignment="Left" />
           <hr className="sectionDivider"/>
-          <Project title="Chess Puzzles" description={tChessPuzzles} link="/chess" source="/chess"/>
+          <Project title="Chess Puzzles" description={tChessPuzzles} link={<Link className="link" to="/chess"> [link]</Link>} source="/chess"/>
         </div>
     );
   }

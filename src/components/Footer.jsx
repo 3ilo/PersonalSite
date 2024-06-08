@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="footerWrapper">
         <span className="footer">
             <p>Personal Website of Milo Chase</p>
-            <p>TODO: add email</p>
+            <a href="mailto: hi.milochase@gmail.com">hi.milochase@gmail.com</a>
             <a href="https://github.com/3ilo">
                 <img class="icon-github" src={github}></img> 
                 &nbsp;
