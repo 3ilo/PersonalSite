@@ -8,42 +8,30 @@ import { useEffect, useState } from "react";
  * data storage.
  */
 export default function Blog() {
-    const [posts, setPosts] = useState({});
-    const postPath = "/BlogPosts/"
-    const postFiles = {
-        "7": "1 June 2024",
+    const [posts, setPosts] = useState([]);
+    // const [renderedPosts, setRenderedPosts] = useState([]);
+    const contentPath = "/BlogPosts/posts.json"
+    // const postFiles = [
+    //     {"7": "1 June 2024"},
+    //     {"Media Provenance": "7 September 2024"}
+    // ]
+
+    const fetchPostsData = async () => {
+        const response = await fetch(contentPath);
+        const jsonContent = await response.json();
+        setPosts(jsonContent);
     }
+
     useEffect(() => {
-        Object.entries(postFiles).forEach(([title, date]) => fetch(postPath+title+".txt").then(
-            (res) => res.text().then(
-                (text) => {
-                    let newPost = {}; 
-                    newPost[title]=text; 
-                    setPosts({...posts, ...newPost })
-                }
-            )
-        ));
-    }, []);
-    const RenderPosts = () => {
-        const renderedPosts = []
-        Object.entries(posts).forEach(([title, body]) => 
-            renderedPosts.push(
-                <BlogPost date={postFiles[title]} title={title} body={body}/>
-            )
-        )
-        return (
-            <>
-            {renderedPosts}
-            <hr className="divider"/>
-            </>
-        )
-    }
+        fetchPostsData();
+    }, [])
 
     return ( 
       <div className="blog">
+        {console.log("TEST2", posts)}
         <SectionHeader text="Blog" alignment="Center"/>
         <hr className="divider"/>
-        <RenderPosts />
+        {posts.toReversed().map((p) => <BlogPost key={p["title"]} date={p["date"]} title={p["title"]} body={p["md_content"]}/>)}
       </div>
     );
   }

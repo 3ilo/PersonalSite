@@ -1,4 +1,4 @@
-import { GenericWrapper, TextField } from "./Commons";
+import { GenericWrapper, TextField, EnrichedText } from "./Commons";
 import "./styles/BlogPost.css";
 
 export default function BlogPost(props){
@@ -14,8 +14,8 @@ export default function BlogPost(props){
     }
     const BlogBody = (props) => {
         return (
-            <GenericWrapper className="blogBody" 
-            component={props.body} alignment="Left"/>
+            <EnrichedText className="blogBody" 
+            content={props.body} alignment="Left"/>
         )
     }
     return(
@@ -23,6 +23,7 @@ export default function BlogPost(props){
             <BlogDate date={props.date}/>
             <BlogTitle title={props.title}/>
             <BlogBody body={props.body}/>
+            <hr className="divider"/>
         </div>
     )
 };

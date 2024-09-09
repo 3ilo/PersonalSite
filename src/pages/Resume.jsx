@@ -4,13 +4,10 @@ export default function Resume() {
     var idempotence = false;
     useEffect(() => {
         if (!idempotence){
-            window.open("/updated_resume_2024.pdf", "_blank");
+            window.open("/Resume.pdf", "_blank");
             idempotence = true;
         }
         window.location.href = "/";
     }, [])
-    return (
-        <>
-        </>
-    )
+    return <></>
 }
